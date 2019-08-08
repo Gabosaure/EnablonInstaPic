@@ -8,10 +8,8 @@ import android.os.Bundle;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import com.GabCorp.enablonpicapp.adapters.RecyclerViewAdapter;
 import com.GabCorp.enablonpicapp.models.InstaPic;
-import com.GabCorp.enablonpicapp.utils.Constants;
 import com.GabCorp.enablonpicapp.viewmodels.InstaPicViewModel;
 
 import java.util.ArrayList;
@@ -55,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
-     * Subscribing to oberver
+     * Subscribing to observer
      */
     private void subscribeObservers(){
         mInstaPicViewModel.getInstaPics().observe(this, new Observer<List<InstaPic>>()  {
